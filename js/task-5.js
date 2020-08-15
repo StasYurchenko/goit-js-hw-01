@@ -12,9 +12,8 @@ let country;
 if (countryName === null) {
   message = CANCELED_BY_USER;
 } else {
-  country = countryName[0].toUpperCase() + countryName.toLowerCase().slice(1); // Write code on this line
+  country = countryName[0].toUpperCase() + countryName.toLowerCase().slice(1);
   switch (country) {
-    // Write code under this line
     case 'Китай':
       price = 100;
       break;
@@ -32,20 +31,7 @@ if (countryName === null) {
   }
 }
 if (price) {
-  // Write code on this line
   message = `Доставка в ${country} будет стоить ${price} кредитов`;
 }
 
 console.log(message);
-
-//если countryName равно "КитаЙ"
-// то значение message будет равно
-// 'Доставка в Китай будет стоить 100 кредитов'
-
-//если countryName равно null
-// то значение message будет равно
-// 'Отменено пользователем!'
-
-//если countryName равно "Чили"
-// то значение message будет равно
-// 'В выбранную страну доставка недоступна.'
